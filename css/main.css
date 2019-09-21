@@ -1,0 +1,128 @@
+/* body */
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+/* header */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  justify-content: center;
+}
+
+.header-text {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  background-color: #4aaaa5;
+  color: white;
+  font-size: 40px;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  padding: 6px 24px;
+}
+
+/* header - navigation bar */
+.navbar {
+  align-self: center;
+}
+
+.link {
+  color: gray;
+  margin: 3px;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/* index content */
+.image {
+  float: left;
+  padding-right: 10px;
+  width: 175px;
+}
+
+.content-header {
+  border-bottom: solid 0.05px gray;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  font-size: 30px;
+  margin: 20px 0px;
+  padding-bottom: 15px;
+  color: #4aaaa5;
+}
+
+.section-main {
+  background-image: url("./../img/mooning.png");
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 24px;
+}
+
+.section-content {
+  align-self: flex-start;
+  background-color: #ffffff;
+  max-width: 960px;
+  padding: 0px 12px;
+  width: 960px;
+}
+
+/* portfolio content */
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-grid img {
+  margin: 12px;
+}
+
+/* contact content */
+#text {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 6px 0px 16px 0px;
+}
+
+.message {
+  height: 200px;
+}
+
+.submit {
+  background-color: #4aaaa5;
+  color: white;
+  font-size: 25px;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  padding: 6px 24px;
+  margin: 12px 0px;
+}
+
+/* footer */
+.copyright {
+  bottom: 0;
+  color: white;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.footer {
+  background-color: #1a1818;
+  border-top: 8px solid #4aaaa5;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+}
+
+/* responsive styles */
+@media (min-width: 1024px) and (max-width: 1399) {
+  .logo {
+    font-size: 96px;
+  }
+}
