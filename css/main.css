@@ -77,12 +77,25 @@
   justify-content: space-between;
 }
 
-.portfolio-grid img {
-  margin: 12px;
+.protfolio-image {
+  height: 200px;
+  width: 200px;
 }
 
 .image-wrapper {
   position: relative;
+  display: inline-block;
+}
+
+.image-label {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  text-align: center;
+  width: 100%;
 }
 
 /* contact content */
