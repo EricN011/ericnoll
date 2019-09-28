@@ -43,7 +43,9 @@
   font-family: "Georgia", Times, "Times New Roman", serif;
   font-size: 20px;
   margin: 20px 0px;
-  padding-bottom: 15px;
+  border-bottom: solid gray 2px;
+  max-width: 960px;
+  align-self: center;
 }
 
 .logo {
@@ -120,8 +122,10 @@
 }
 
 /* contact content */
-.contact {
-  background-color: #4aaaa5;
+.contactbody {
+  width: 575px;
+  text-align-last: center;
+  align-self: center;
 }
 
 #text {
