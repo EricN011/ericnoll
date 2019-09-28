@@ -11,17 +11,17 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <title>Eric Noll: Blossoming Developer</title>
   </head>
-  <body class="body">
+  <body id="home" class="body">
     <!-- header -->
     
     <!-- Home Page --> 
       <div class="jumbotron grid-center logo">
-          <header id="home" class="header">
-            <h1>Welcome to my Website</h1>
+          <header>
+            <h1 class="header">Welcome to my Website</h1>
       </div>
     </header>
     <!-- navigation bar / Vertical / Stuck to Page / Interactive -->
-       <button> <ul class="navbar nav flex-column">
+       <ul class="navbar btn-group btn-group-toggle btn-primary flex-column">
           <li class="btn btn-primary"><a class="link" href="#home">Home</a></li>
           <li class="btn btn-primary"><a class="link" href="#index">About Me</a></li>
           <li class="btn btn-primary"><a class="link" href="#portfolio">My Work</a></li>
@@ -34,7 +34,7 @@
     <div class="">
       <section id="index" class="grid-center">
         <div class="section-content container">
-          <div class="header"><h1 class="title">About Me </h1>         
+          <div class="subheader"><h1 class="title">About Me </h1>         
           <p class="col-sm-12">
               Hello! Read more about me as a blossoming, junior developer.
             </p> </div>
@@ -76,7 +76,10 @@
       <!-- Portfolio -->
       <section id="portfolio" class= "beige">
         <div class="grid-center container">
-          <h1 class="header title">My Work</h1>
+            <div class="subheader"><h1 class="title">My Work </h1>         
+              <p class="col-sm-12">
+                  Admire my beautiful projects!
+                </p> </div>
           <div class="portfolio-grid section-content">
             <div class="image-wrapper">
               <img
@@ -127,14 +130,17 @@
       <!-- Contact Page -->
       <section id="contact">
         <div class="grid-center black">
-          <h1 class="header title">Contact Me</h1>
+            <div class="subheader"><h1 class="title">Contact Me </h1>         
+              <p class="col-sm-12">
+                  Like what you see? Let's chat!
+                </p> </div>
           <!-- Email Button -->
           <p>
-            eanoll88@gmail.com
+           <button type="button" class="btn btn-light"><a href = "mailto: eanoll88@gmail.com">Email Me</a></button>
           </p>
           <!-- LinkedIn Button -->
           <p>
-            https://www.linkedin.com/in/ericnoll88/
+              <button type="button" class="btn btn-light"><a href = "https://www.linkedin.com/in/ericnoll88/">Link Me</a></button>
           </p>
           <!-- GitHub Button-->
         </div>
