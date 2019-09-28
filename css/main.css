@@ -27,7 +27,6 @@
 /* header */
 .header {
   text-align: center;
-  border-bottom: solid 0.05px gray;
   font-family: "Georgia", Times, "Times New Roman", serif;
   font-size: 20px;
   margin: 20px 0px;
@@ -57,12 +56,14 @@
 /* header - navigation bar */
 .navbar {
   align-self: center;
+  position: fixed;
+  right: 30px;
+  top: 10px;
+  width: 10px;
 }
 
 .link {
-  color: gray;
-  margin: 3px;
-  padding: 6px 12px;
+  color: white;
   text-decoration: none;
 }
 
