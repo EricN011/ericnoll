@@ -1,15 +1,40 @@
 /* body */
-.body {
+.grid-center {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 720px;
 }
+.align-space {
+  justify-content: space-between;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* colors */
+.color-1 {
+  background-color: #ffd9b3;
+}
+
 /* header */
 .header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #cccccc;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  border-bottom: solid 0.05px gray;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  font-size: 20px;
+  margin: 20px 0px;
+  padding-bottom: 15px;
+}
+
+.title {
+  color: #4aaaa5;
+  font-size: 50px;
+  padding-top: 40px;
 }
 
 .header-text {
@@ -40,18 +65,12 @@
 
 /* index content */
 .image {
-  float: left;
-  padding-right: 10px;
-  width: 175px;
+  align-content: center;
+  padding: 0px 10px 0px 10px;
+  width: 225px;
 }
 
-.content-header {
-  border-bottom: solid 0.05px gray;
-  font-family: "Georgia", Times, "Times New Roman", serif;
-  font-size: 30px;
-  margin: 20px 0px;
-  padding-bottom: 15px;
-  color: #4aaaa5;
+.header {
 }
 
 .section-main {
@@ -63,11 +82,8 @@
 }
 
 .section-content {
-  align-self: flex-start;
-  background-color: #ffffff;
+  align-self: center;
   max-width: 960px;
-  padding: 0px 12px;
-  width: 960px;
 }
 
 /* portfolio content */
@@ -99,6 +115,10 @@
 }
 
 /* contact content */
+.contact {
+  background-color: #4aaaa5;
+}
+
 #text {
   width: 100%;
   padding: 12px;
@@ -106,35 +126,6 @@
   border-radius: 4px;
   box-sizing: border-box;
   margin: 6px 0px 16px 0px;
-}
-
-.message {
-  height: 200px;
-}
-
-.submit {
-  background-color: #4aaaa5;
-  color: white;
-  font-size: 25px;
-  font-family: "Georgia", Times, "Times New Roman", serif;
-  padding: 6px 24px;
-  margin: 12px 0px;
-}
-
-/* footer */
-.copyright {
-  bottom: 0;
-  color: white;
-  padding-bottom: 5px;
-  position: relative;
-}
-
-.footer {
-  background-color: #1a1818;
-  border-top: 8px solid #4aaaa5;
-  display: flex;
-  height: 35px;
-  justify-content: center;
 }
 
 /* responsive styles */
