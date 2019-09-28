@@ -17,8 +17,11 @@
 }
 
 /* colors */
-.color-1 {
+.beige {
   background-color: #ffd9b3;
+}
+.black {
+  background-color: black;
 }
 
 /* header */
