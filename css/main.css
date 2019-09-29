@@ -123,6 +123,10 @@
   align-self: center;
 }
 
+.fontsize {
+  font-size: 25px;
+}
+
 /* responsive styles */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -138,17 +142,25 @@
     max-width: 100%;
     text-align: center;
   }
+
+  .fontsize {
+    font-size: 20px;
+  }
+
   .header {
     font-size: 50px;
   }
+
   .index {
     display: flex;
     flex-direction: column;
     height: 1075px;
   }
+
   .image {
     padding: 10px;
   }
+
   .image-label {
     background-color: #4aaaa5;
     bottom: 12px;
@@ -182,53 +194,8 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .align-space {
-    justify-content: center;
-    margin: 5px;
-  }
-  .col-sm-4 {
-    max-width: 100%;
-    text-align: center;
-  }
   .header {
     font-size: 50px;
-  }
-  .index {
-    display: flex;
-    flex-direction: column;
-    height: 1075px;
-  }
-  .image {
-    padding: 10px;
-  }
-  .image-label {
-    background-color: #4aaaa5;
-    bottom: 12px;
-    color: #ffffff;
-    font-size: 24px;
-    left: 15px;
-    position: absolute;
-    text-align: center;
-    width: 135px;
-  }
-
-  .navbar {
-    align-self: center;
-    border-bottom: 2px solid lightsteelblue;
-    border-radius: 5px;
-    flex-direction: row;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .portfolio-image {
-    display: inline-block;
-    height: 135px;
-    margin: 5px;
-    position: relative;
-    width: 135px;
   }
 }
 
