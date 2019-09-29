@@ -1,21 +1,3 @@
-/* body */
-.grid-center {
-  display: flex;
-  flex-direction: column;
-  height: 720px;
-}
-.align-space {
-  justify-content: space-between;
-}
-
-.text-end {
-  text-align: end;
-}
-
-.justify {
-  text-align: justify;
-}
-
 /* colors */
 .beige {
   background-color: #ffd9b3;
@@ -24,11 +6,38 @@
   background-color: black;
 }
 
-/* header */
+/* page alignment */
+.align-space {
+  justify-content: space-between;
+}
+
+.grid-center {
+  display: flex;
+  flex-direction: column;
+  height: 720px;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.text-end {
+  text-align: end;
+}
+
+/* home page */
 .header {
-  text-align: center;
   font-family: "Georgia", Times, "Times New Roman", serif;
-  font-size: 75px;
+  font-size: 955px;
+  text-align: center;
+}
+
+.logo {
+  background: linear-gradient(rgba(74, 170, 165, 0.5), rgba(74, 170, 165, 0.5)),
+    url("./../img/playstation-pattern.png");
+  color: white;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  place-content: center;
 }
 
 .title {
@@ -39,38 +48,31 @@
 }
 
 .subheader {
-  text-align: center;
+  align-self: center;
+  border-bottom: solid gray 2px;
+  color: gray;
   font-family: "Georgia", Times, "Times New Roman", serif;
   font-size: 20px;
   margin: 20px 0px;
-  border-bottom: solid gray 2px;
   max-width: 960px;
-  align-self: center;
+  text-align: center;
 }
 
-.logo {
-  background-color: #4aaaa5;
-  color: white;
-  font-size: 40px;
-  font-family: "Georgia", Times, "Times New Roman", serif;
-  padding: 6px 24px;
-  place-content: center;
-}
-
-/* header - navigation bar */
-.navbar {
-  align-self: center;
-  border: 2px solid lightsteelblue;
-  position: fixed;
-  right: 40px;
-  top: 40px;
-  border-radius: 10px;
-  z-index: 1;
-}
-
+/* navigation bar */
 .link {
   color: white;
   text-decoration: none;
+}
+
+.navbar {
+  align-self: center;
+  border: 2px solid lightsteelblue;
+  border-radius: 10px;
+  flex-direction: column;
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  z-index: 1;
 }
 
 /* index content */
@@ -80,20 +82,29 @@
   width: 225px;
 }
 
-.section-main {
-  background-image: url("./../img/mooning.png");
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  padding: 24px;
-}
-
 .section-content {
   align-self: center;
   max-width: 960px;
 }
 
 /* portfolio content */
+.image-label {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
@@ -105,22 +116,6 @@
   width: 200px;
 }
 
-.image-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.image-label {
-  background-color: #4aaaa5;
-  color: #ffffff;
-  font-size: 24px;
-  position: absolute;
-  bottom: 12px;
-  left: 0;
-  text-align: center;
-  width: 100%;
-}
-
 /* contact content */
 .contactbody {
   width: 575px;
@@ -128,18 +123,132 @@
   align-self: center;
 }
 
-#text {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin: 6px 0px 16px 0px;
+/* responsive styles */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .align-space {
+    justify-content: center;
+    margin: 5px;
+  }
+  .btn-block {
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    max-width: 100%;
+    text-align: center;
+  }
+  .header {
+    font-size: 50px;
+  }
+  .index {
+    display: flex;
+    flex-direction: column;
+    height: 1075px;
+  }
+  .image {
+    padding: 10px;
+  }
+  .image-label {
+    background-color: #4aaaa5;
+    bottom: 12px;
+    color: #ffffff;
+    font-size: 24px;
+    left: 15px;
+    position: absolute;
+    text-align: center;
+    width: 135px;
+  }
+
+  .navbar {
+    align-self: center;
+    border-bottom: 2px solid lightsteelblue;
+    border-radius: 5px;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .portfolio-image {
+    display: inline-block;
+    height: 135px;
+    margin: 5px;
+    position: relative;
+    width: 135px;
+  }
 }
 
-/* responsive styles */
-@media (min-width: 1024px) and (max-width: 1399) {
-  .logo {
-    font-size: 96px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .align-space {
+    justify-content: center;
+    margin: 5px;
+  }
+  .col-sm-4 {
+    max-width: 100%;
+    text-align: center;
+  }
+  .header {
+    font-size: 50px;
+  }
+  .index {
+    display: flex;
+    flex-direction: column;
+    height: 1075px;
+  }
+  .image {
+    padding: 10px;
+  }
+  .image-label {
+    background-color: #4aaaa5;
+    bottom: 12px;
+    color: #ffffff;
+    font-size: 24px;
+    left: 15px;
+    position: absolute;
+    text-align: center;
+    width: 135px;
+  }
+
+  .navbar {
+    align-self: center;
+    border-bottom: 2px solid lightsteelblue;
+    border-radius: 5px;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .portfolio-image {
+    display: inline-block;
+    height: 135px;
+    margin: 5px;
+    position: relative;
+    width: 135px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 75px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header {
+    font-size: 95px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .header {
+    font-size: 95px;
   }
 }
